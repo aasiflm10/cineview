@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { Navbar } from "./components/navbar";
 import { CarouselSpacing } from "./components/carousel";
+import { MovieCard } from "./components/movie-card";
 
 export default function Home() {
   const [text, setText] = useState('original')
@@ -13,13 +14,7 @@ export default function Home() {
       }}
     >
       <Navbar />
-      {/* <div className="flex bg-purple-400 flex h-48">
-      <MovieCard/>
-      <MovieCard/>
-      <MovieCard/>
-      <MovieCard/>
-      <MovieCard/>
-      </div> */}
+
       <CarouselSpacing/>
     </div>
   );
