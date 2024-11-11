@@ -4,7 +4,7 @@ import {
   CarouselNavigation,
   CarouselItem,
 } from "@/components/core/carousel";
-import { MovieCard } from "./movie-card";
+import { CarouselCard } from "./carousel-card";
 
 export function CarouselSpacing() {
   return (
@@ -13,28 +13,28 @@ export function CarouselSpacing() {
         {/* Adjusted CarouselContent for tighter spacing */}
         <CarouselContent className="flex space-x-[15px] ">
           <CarouselItem className=" w-60 flex-shrink-0 ">
-            <MovieCard />
+            <CarouselCard />
           </CarouselItem>
-          <CarouselItem className="w-60 flex-shrink-0 ">  
-            <MovieCard />
-          </CarouselItem>
-          <CarouselItem className="w-60 flex-shrink-0">
-            <MovieCard />
+          <CarouselItem className="w-60 flex-shrink-0 ">
+            <CarouselCard />
           </CarouselItem>
           <CarouselItem className="w-60 flex-shrink-0">
-            <MovieCard />
+            <CarouselCard />
           </CarouselItem>
           <CarouselItem className="w-60 flex-shrink-0">
-            <MovieCard />
+            <CarouselCard />
           </CarouselItem>
           <CarouselItem className="w-60 flex-shrink-0">
-            <MovieCard />
+            <CarouselCard />
           </CarouselItem>
           <CarouselItem className="w-60 flex-shrink-0">
-            <MovieCard />
+            <CarouselCard />
           </CarouselItem>
           <CarouselItem className="w-60 flex-shrink-0">
-            <MovieCard />
+            <CarouselCard />
+          </CarouselItem>
+          <CarouselItem className="w-60 flex-shrink-0">
+            <CarouselCard />
           </CarouselItem>
         </CarouselContent>
 
