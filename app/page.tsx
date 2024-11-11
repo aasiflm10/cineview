@@ -20,6 +20,8 @@ export default function Home() {
         <CarouselSpacing />
       </div>
       <Movies></Movies>
+      <Movies></Movies>
+      <br/>
       <Footer/>
     </div>
   );
