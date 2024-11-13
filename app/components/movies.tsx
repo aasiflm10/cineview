@@ -4,7 +4,7 @@ import { usePopularMovies } from "../hooks/usePopularMovies";
 import Image from "next/image";
 export function Movies() {
   const { popularMovies } = usePopularMovies();
-
+  
   return (
     <div>
       <div className="p-10 text-2xl">Continue Playing</div>

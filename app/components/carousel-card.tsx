@@ -1,16 +1,13 @@
-export function CarouselCard() {
+import { IMAGE_BASE_URL } from "@/url";
 
-  // <div>
-  //       <Image
-  //         src="https://image.tmdb.org/t/p/w500/nOtsS4Zjqbn2p4Nf71wLv4Css2T.jpg"
-  //         alt="hi there"
-  //         width={500}
-  //         height={500}
-  //       />
-  //     </div>
-  
-  return <div className=" flex ml-4 h-60 w-40 bg-red-500">
-    <h3 className="text-lg font-semibold mb-2">Hi</h3>
-    <p className="text-gray-600 text-sm">Nothing much</p>
-  </div>;
+export function CarouselCard({imagePath} : {imagePath : string}) {
+  const url = IMAGE_BASE_URL+imagePath;
+  return (
+    <div className="ml-4 h-60 w-40">
+      <img
+        src="https://image.tmdb.org/t/p/w500/1E5baAaEse26fej7uHcjOgEE2t2.jpg"
+        className="object-cover h-60 w-40 "
+      ></img>
+    </div>
+  );
 }
