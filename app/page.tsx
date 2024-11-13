@@ -21,7 +21,7 @@ export default function Home() {
       </div>
       <Movies></Movies>
       <Movies></Movies>
-      <br/>
+
       <Footer/>
     </div>
   );
