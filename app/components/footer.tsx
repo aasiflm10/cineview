@@ -1,3 +1,7 @@
+import TwitterIcon from '@mui/icons-material/Twitter';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import Instagram from '@mui/icons-material/Instagram';
+
 export function Footer() {
   return (
     <div className="w-full h-[319px] pt-[35px] bg-white">
@@ -31,9 +35,10 @@ export function Footer() {
         <div>
           Contact
           <div className="pt-8 flex space-x-4">
-            <p>tw</p>
-            <p>fb</p>
-            <p>insta</p>
+            <TwitterIcon/>
+            <FacebookIcon/>
+            <Instagram/>
+            
           </div>
         </div>
       </div>
