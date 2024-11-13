@@ -1,6 +1,6 @@
 import TwitterIcon from '@mui/icons-material/Twitter';
 import FacebookIcon from '@mui/icons-material/Facebook';
-import Instagram from '@mui/icons-material/Instagram';
+import InstagramIcon from '@mui/icons-material/Instagram';
 
 export function Footer() {
   return (
@@ -37,7 +37,7 @@ export function Footer() {
           <div className="pt-8 flex space-x-4">
             <TwitterIcon/>
             <FacebookIcon/>
-            <Instagram/>
+            <InstagramIcon/>
             
           </div>
         </div>
