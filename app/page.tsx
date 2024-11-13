@@ -8,7 +8,7 @@ import { usePopularMovies } from "./hooks/usePopularMovies";
 
 export default function Home() {
   const [text, setText] = useState("original");
-
+  
   usePopularMovies();
 
   return (
