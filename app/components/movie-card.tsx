@@ -1,17 +1,23 @@
 export function MovieCard() {
   return (
-    <div className="relative m-4 h-[450px] w-[309px] bg-red-500 overflow-hidden">
-      {/* Background Image */}
+    <div className="relative z-0 m-4 h-[450px] w-[309px] bg-red-500">
       <img
         src="https://image.tmdb.org/t/p/w500/1E5baAaEse26fej7uHcjOgEE2t2.jpg"
-        className="absolute inset-0 object-cover h-full w-full"
-        alt="Movie Background"
+        className="absolute z-10 object-cover h-full w-full"
       />
-      
-      {/* Text Overlay */}
-      <div className="relative z-10 flex flex-col justify-center items-center h-full text-white bg-black bg-opacity-50">
-        <h2 className="text-2xl font-bold">Movie Title</h2>
-        <p className="text-sm mt-2">Some description or other details</p>
+      <div className="relative z-20 mt-[323px] ml-[30px] mb-[30px] mr-[114px]  justify-center text-white text-lg font-bold">
+        <h1>The lion King</h1>
+        <h2>20 April</h2>
+        <h2>6+</h2>
+        <div className="flex space-x-2">
+          <div className="bg-gray-400">
+            Ru
+          </div>
+          <div className="bg-gray-400">
+            Tr
+          </div>
+        </div>
+
       </div>
     </div>
   );
