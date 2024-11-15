@@ -1,15 +1,17 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { constants } from "buffer";
 
-const MOVIE_DB_TOKEN = process.env.MOVIE_DB_TOKEN;
+const MOVIE_DB_TOKEN = process.env.NEXT_PUBLIC_MOVIE_DB_TOKEN;
 async function getMovies() {
+  console.log(MOVIE_DB_TOKEN)
   const url =
     "https://api.themoviedb.org/3/movie/now_playing?language=en-US&page=1";
   const options = {
     headers: {
       accept: "application/json",
       Authorization:
-        "Bearer "+{MOVIE_DB_TOKEN},
+        `Bearer ${MOVIE_DB_TOKEN}`,
     },
   };
 
