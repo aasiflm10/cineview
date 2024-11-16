@@ -9,7 +9,7 @@ export function Footer() {
         <div>
           Profile
           <div className="pt-8">
-            <p>FAQ's</p>
+            <p>FAQ&apos;s</p>
             <p>Pricing Plans</p>
             <p>Order Tracking</p>
             <p>Returns</p>
@@ -19,7 +19,7 @@ export function Footer() {
           Recent Post
           <div className="pt-8">
             <p>Touch of Uniqueness</p>
-            <p>Offices you won't forget</p>
+            <p>Offices you won&apos;t forget</p>
             <p>Cicilian</p>
           </div>
         </div>

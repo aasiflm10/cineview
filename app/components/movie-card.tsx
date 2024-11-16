@@ -14,7 +14,7 @@ export function MovieCard({
   release_date : string
 }) {
 
-  const year = release_date.trim().substring(0, 4);
+  // const year = release_date.trim().substring(0, 4);
   return (
     <div key={id} className="relative z-0 m-4 h-[450px] w-[309px] bg-red-500">
       <img

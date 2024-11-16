@@ -1,5 +1,4 @@
 "use client";
-import { useState } from "react";
 import { Navbar } from "./components/navbar";
 import { CarouselSpacing } from "./components/carousel";
 import { PopularMovies } from "./components/popular-movies";
@@ -9,7 +8,7 @@ import { NowPlayingMovies } from "./components/now-playing-movies";
 
 export default function Home() {
   // const [text, setText] = useState("original");
-  let text = "original";
+  const text = "original";
   usePopularMovies();
 
   return (
