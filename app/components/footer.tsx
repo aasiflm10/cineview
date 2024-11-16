@@ -4,7 +4,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 
 export function Footer() {
   return (
-    <div className="w-full h-[319px] pt-[35px] bg-white">
+    <div className="w-full h-[319px] pt-[35px]">
       <div className=" flex justify-evenly ml-[211px]   mr-[135px] h-[178px] bg-black mb-[105px]">
         <div>
           Profile

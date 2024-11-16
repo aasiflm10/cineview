@@ -18,6 +18,7 @@ interface Movie {
   vote_count: number;
 }
 
+
 interface PopularMovies {
   dates: {
     maximum: string;
@@ -30,14 +31,15 @@ interface PopularMovies {
 }
 
 const MOVIE_DB_TOKEN = process.env.NEXT_PUBLIC_MOVIE_DB_TOKEN;
-async function getMovies(): Promise<PopularMovies | null> {
-  console.log(MOVIE_DB_TOKEN);
+async function getNowPlayingMovies() : Promise<PopularMovies | null > {
+  console.log(MOVIE_DB_TOKEN)
   const url =
-    "https://api.themoviedb.org/3/movie/popular?language=en-US&page=1";
+    "https://api.themoviedb.org/3/movie/now_playing?language=en-US&page=1";
   const options = {
     headers: {
       accept: "application/json",
-      Authorization: `Bearer ${MOVIE_DB_TOKEN}`,
+      Authorization:
+        `Bearer ${MOVIE_DB_TOKEN}`,
     },
   };
 
@@ -51,19 +53,19 @@ async function getMovies(): Promise<PopularMovies | null> {
   }
 }
 
-export function usePopularMovies() {
-  const [popularMovies, setPopularMovies] = useState<PopularMovies | null>(
-    null
-  );
 
-  useEffect(() => {
-    async function fetchMovies() {
-      const data = await getMovies();
-      setPopularMovies(data);
-    }
+export function useNowPlayingMovies() {
+    const [popularMovies, setPopularMovies] = useState<PopularMovies | null>(null);
+    
+    useEffect(() => {
+        async function fetchMovies() {
+          const data = await getNowPlayingMovies();
+          setPopularMovies(data);
+        }
+    
+        fetchMovies();
+      }, []);
+    
 
-    fetchMovies();
-  }, []);
-
-  return { popularMovies };
+    return {popularMovies};
 }

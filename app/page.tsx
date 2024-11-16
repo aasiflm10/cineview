@@ -2,9 +2,10 @@
 import { useState } from "react";
 import { Navbar } from "./components/navbar";
 import { CarouselSpacing } from "./components/carousel";
-import { Movies } from "./components/movies";
+import { PopularMovies } from "./components/popular-movies";
 import { Footer } from "./components/footer";
 import { usePopularMovies } from "./hooks/usePopularMovies";
+import { NowPlayingMovies } from "./components/now-playing-movies";
 
 export default function Home() {
   const [text, setText] = useState("original");
@@ -12,7 +13,7 @@ export default function Home() {
   usePopularMovies();
 
   return (
-    <div>
+    <div className="bg-gray">
       <div
         className="h-screen w-full bg-cover bg-center"
         style={{
@@ -23,8 +24,8 @@ export default function Home() {
 
         <CarouselSpacing />
       </div>
-      <Movies></Movies>
-      <Movies></Movies>
+      <PopularMovies/>
+      <NowPlayingMovies/>
 
       <Footer />
     </div>

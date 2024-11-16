@@ -7,24 +7,24 @@ export function MovieCard({
   original_language,
   release_date
 }: {
-  id: Number;
-  poster_path : String;
-  title : String;
-  original_language :  String;
-  release_date : String
+  id: number;
+  poster_path : string;
+  title : string;
+  original_language :  string;
+  release_date : string
 }) {
 
   const year = release_date.trim().substring(0, 4);
   return (
-    <div className="relative z-0 m-4 h-[450px] w-[309px] bg-red-500">
+    <div key={id} className="relative z-0 m-4 h-[450px] w-[309px] bg-red-500">
       <img
         src= {`${IMAGE_BASE_URL}${poster_path}`}
         className="absolute z-10 object-cover h-full w-full"
       />
-      <div className="relative z-20 mt-[323px] ml-[30px] mb-[30px] mr-[114px]  justify-center text-white text-lg font-bold">
+      <div className="relative z-20 mt-[323px] ml-[30px] mb-[30px] justify-center text-white text-lg font-bold">
         <h1>{title}</h1>
-        <p className="text-xs">{year}</p>
-        <p className="outline p-2 text-xs">{original_language}</p>
+        <h1 className="text-xs pt-2 pb-2">{release_date}</h1>
+        <h1 className="outline p-2 text-xs w-8">{original_language}</h1>
       </div>
     </div>
   );
