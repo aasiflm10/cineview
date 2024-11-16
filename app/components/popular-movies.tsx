@@ -34,7 +34,7 @@ export function PopularMovies() {
       <div className="flex gap-16">
         {
           moviesArray.map((m)=>{
-            return <MovieCard release_date={m.release_date} id={m.id} poster_path={m.poster_path} title={m.title} original_language={m.original_language}/>
+            return <MovieCard key={m.id} release_date={m.release_date} id={m.id} poster_path={m.poster_path} title={m.title} original_language={m.original_language}/>
           })
         }
       </div>

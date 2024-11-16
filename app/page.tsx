@@ -8,8 +8,8 @@ import { usePopularMovies } from "./hooks/usePopularMovies";
 import { NowPlayingMovies } from "./components/now-playing-movies";
 
 export default function Home() {
-  const [text, setText] = useState("original");
-  
+  // const [text, setText] = useState("original");
+  let text = "original";
   usePopularMovies();
 
   return (
