@@ -13,28 +13,28 @@ export function CarouselSpacing() {
         {/* Adjusted CarouselContent for tighter spacing */}
         <CarouselContent className="flex space-x-[15px] ">
           <CarouselItem className=" w-60 flex-shrink-0 ">
-            <CarouselCard imagePath="" />
+            <CarouselCard />
           </CarouselItem>
           <CarouselItem className="w-60 flex-shrink-0 ">
-            <CarouselCard imagePath="" />
+            <CarouselCard />
           </CarouselItem>
           <CarouselItem className="w-60 flex-shrink-0">
-            <CarouselCard imagePath=""/>
+            <CarouselCard />
           </CarouselItem>
           <CarouselItem className="w-60 flex-shrink-0">
-            <CarouselCard imagePath=""/>
+            <CarouselCard />
           </CarouselItem>
           <CarouselItem className="w-60 flex-shrink-0">
-            <CarouselCard imagePath=""/>
+            <CarouselCard />
           </CarouselItem>
           <CarouselItem className="w-60 flex-shrink-0">
-            <CarouselCard imagePath=""/>
+            <CarouselCard />
           </CarouselItem>
           <CarouselItem className="w-60 flex-shrink-0">
-            <CarouselCard imagePath=""/>
+            <CarouselCard />
           </CarouselItem>
           <CarouselItem className="w-60 flex-shrink-0">
-            <CarouselCard imagePath=""/>
+            <CarouselCard />
           </CarouselItem>
         </CarouselContent>
 
