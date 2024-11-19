@@ -20,10 +20,9 @@
 ## Installation
 
 ### Clone the repository
-
-Install Dependencies
-Navigate into the project folder and install the necessary dependencies:
-
+1. Run the following command or download the zip file.
+``` git clone
+```
 bash
 Copy code
 cd cineview
