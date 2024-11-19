@@ -21,26 +21,30 @@
 
 ### Clone the repository
 1. Run the following command or download the zip file.
-``` git clone
 ```
-bash
-Copy code
+git clone https://github.com/aasiflm10/cineview.git
+```
+2. Head to the cineview directory
+```
 cd cineview
+```
+3. Install dependencies
+```
 npm install
-Set up Environment Variables
-Create a .env.local file in the root of the project and add your TMDb API key:
-
-bash
-Copy code
+```
+4. Set up Environment Variables
+Create a .env file in the root of the project and add your TMDb API key:
+```
 NEXT_PUBLIC_TMDB_API_KEY=your_tmdb_api_key
+```
 You can obtain your API key from The Movie Database (TMDb).
 
-Run the App
-Start the development server:
+5. Run the App. Start the development server:
 
-bash
-Copy code
+```
 npm run dev
+```
+
 Visit http://localhost:3000 to see the app in action.
 
 Usage
